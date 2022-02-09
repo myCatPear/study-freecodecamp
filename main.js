@@ -1,20 +1,29 @@
+const arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+
+const myArray = [["John", 23], ["cat", 2]];
+
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
+
 // Setup
-const lastName = "Lovelace";
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
 
 // Only change code below this line
-const secondToLastLetterOfLastName = lastName; // Change this line
 
-const myNoun = "dog";
-const myAdjective = "big";
-const myVerb = "ran";
-const myAdverb = "quickly";
-
-// Only change code below this line
-const wordBlanks = ""; // Change this line
-// Only change code above this line
-
-const sandwich = ["peanut butter", "jelly", "bread"];
-
-const array = [50, 60, 70];
-array[0];
-const data = array[1];
+function functionName() {
+  console.log("Hello World");
+}
