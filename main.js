@@ -1,29 +1,48 @@
-const arr1 = [1, 2, 3];
-arr1.push(4);
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
 
-const arr2 = ["Stimpson", "J", "cat"];
-arr2.push(["happy", "joy"]);
+function plusThree(num) {
+  return num + 3;
+}
 
-const myArray = [["John", 23], ["cat", 2]];
+const answer = plusThree(5);
 
-const threeArr = [1, 4, 6];
-const oneDown = threeArr.pop();
-console.log(oneDown);
-console.log(threeArr);
+// Declare the myGlobal variable below this line
 
-const ourArray = ["Stimpson", "J", ["cat"]];
-const removedFromOurArray = ourArray.shift();
 
-const ourArray = ["Stimpson", "J", "cat"];
-ourArray.shift();
-ourArray.unshift("Happy");
+function fun1() {
+  // Assign 5 to oopsGlobal Here
 
-// Setup
-const myArray = [["John", 23], ["dog", 3]];
-myArray.shift();
+}
 
-// Only change code below this line
+// Only change code above this line
 
-function functionName() {
-  console.log("Hello World");
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+function myLocalScope() {
+  // Only change code below this line
+
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
+
+const someVar = "Hat";
+
+function myFun() {
+  const someVar = "Head";
+  return someVar;
 }
