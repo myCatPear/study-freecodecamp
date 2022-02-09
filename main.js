@@ -1,16 +1,20 @@
 // Setup
-let lastNameLength = 0;
 const lastName = "Lovelace";
 
 // Only change code below this line
-lastNameLength = lastName;
+const secondToLastLetterOfLastName = lastName; // Change this line
 
-// Setup
-let firstLetterOfLastName = "";
-const lastName = "Lovelace";
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
 
 // Only change code below this line
-firstLetterOfLastName = lastName; // Change this line
+const wordBlanks = ""; // Change this line
+// Only change code above this line
 
-const firstName = "Ada";
-const lastLetter = firstName[firstName.length - 1];
+const sandwich = ["peanut butter", "jelly", "bread"];
+
+const array = [50, 60, 70];
+array[0];
+const data = array[1];
