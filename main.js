@@ -1,48 +1,60 @@
-function testFun(param1, param2) {
-  console.log(param1, param2);
-}
+// Setup
+const testArr = [1, 2, 3, 4, 5];
 
-function plusThree(num) {
-  return num + 3;
-}
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 
-const answer = plusThree(5);
-
-// Declare the myGlobal variable below this line
-
-
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-
-}
-
-// Only change code above this line
-
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
+function test (myCondition) {
+  if (myCondition) {
+    return "It was true";
   }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
+  return "It was false";
 }
 
-function myLocalScope() {
+test(true);
+test(false);
+
+// Setup
+function compareEquality(a, b) {
+  if (typeof(a) == typeof(b)) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+
+function testLogicalAnd(val) {
   // Only change code below this line
 
-  console.log('inside myLocalScope', myVar);
+  if (val) {
+    if (val) {
+      return "Yes";
+    }
+  }
+
+  // Only change code above this line
+  return "No";
 }
-myLocalScope();
 
-// Run and check the console
-// myVar is not defined outside of myLocalScope
-console.log('outside myLocalScope', myVar);
+testLogicalAnd(10);
 
-const someVar = "Hat";
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
 
-function myFun() {
-  const someVar = "Head";
-  return someVar;
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+
+  else {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
 }
+
+testElse(4);
