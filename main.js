@@ -529,3 +529,8 @@ if (n <= 0) {
   
   // Only change code above this line
 }
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); // Change this line
+
